@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Iulia Munteanu</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="styles/style.css">
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="script/login.js"></script>
+    <script type="text/javascript" src="script/aboutUs.js"></script>
+    <script type="text/javascript" src="script/more.js"></script>
+
+  </head>
+  <body class="container-fluid parent">
+    <!--Header Page with the authorization buttons-->
+    <header class="authorization">
+        <span class="white">
+          <i class="fa fa-angle-right"></i>
+          <a href="#" class="grow" id="login">Login</a>
+    <!--Login Form-->
+          <div id="login-div" class="login-modal">
+            <form class="login-content animate" action="index.html">
+              <div class="form-container row">
+                <i class="fa fa-lock col lock-font"></i>
+                <div class="login-input col">
+                  <input id="email" type="email" name="email"
+                  value="Your e-mail">
+                  <span class="email-error"></span>
+                  <input id="password" type="text" name="password"
+                  value="Your password" minlength="8" required>
+                  <span class="pswd-error"></span>
+                </div>
+                <button class="col submit-btn" type="submit"><i class="fa fa-angle-right"></i>GO</button>
+              </div>
+              <div id="close-div">
+                  <span class="close" title="Close Login">&times;</span>
+              </div>
+            </form>
+          </div>
+        </span>
+        or
+        <span class="white">
+          <a href="#" class="grow">Register</a>
+        </span>
+        to enjoy all of the benefits of our site !
+      </p>
+    </header>
+
+    <!--Page's header-->
+    <h1><span class="black">THE BUSINESS</span> COMPANY</h1>
+
+    <!--Slide banner, done with bootstrap-->
+    <article id="banner">
+      <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img class="d-block w-100" src="photos/the_office1.jpg" alt="The office">
+            <div class="carousel-caption d-md-block img-caption">
+              <span class="caption-first">the</span>
+              <span class="caption-second">OFFICE
+                <span class="caption-more">&plus;</span>
+              </span>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img class="d-block w-100" src="photos/the_floor1.jpg" alt="The floor">
+            <div class="carousel-caption d-md-block img-caption">
+              <span class="caption-first">the</span>
+              <span class="caption-second">FLOOR
+                <span class="caption-more">&plus;</span>
+              </span>
+            </div>
+          </div>
+        </div>
+
+        <!--Control buttons for banner slides-->
+        <a class="carousel-control-prev control-prev" href="#carouselExampleControls" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next control-next" href="#carouselExampleControls" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only">Next</span>
+        </a>
+      </div>
+    </article>
+
+    <!--Big buttons section-->
+    <section class="about-us">
+        <ol class="about-us-list row justify-content-between">
+
+          <!--Button 1-->
+          <li class="about-us-list-item col-lg-5">
+            <div class="displayLi">
+              <span class="number">01</span>
+              <div class="about-content">
+                <h2>Our services</h2>
+                <p class="show">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Unum est sine dolore esse.</p>
+              </div>
+              <span class="more-about">+</span>
+          </div>
+          <div class="hideLi">
+            <p class="hide prg-to-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Volutpat ac tincidunt vitae semper quis
+              lectus. Ipsum suspendisse ultrices gravida dictum fusce.
+              Donec ac odio tempor orci dapibus ultrices. Tristique
+              magna sit amet purus. A cras semper auctor neque vitae.
+              Sit amet nisl purus in mollis nunc sed id. Quisque non
+              tellus orci ac auctor augue mauris augue. Vitae proin
+              sagittis nisl rhoncus mattis rhoncus. Adipiscing at in
+              tellus integer feugiat scelerisque.</p>
+          </div>
+          </li>
+
+          <!--Button 2-->
+          <li class="about-us-list-item col-lg-5">
+            <div class="displayLi">
+              <span class="number">02</span>
+              <div class="about-content">
+                <h2>Our rates</h2>
+                <p class="show">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Unum est sine dolore esse.</p>
+              </div>
+              <span class="more-about">+</span>
+            </div>
+            <div class="hideLi">
+              <p class="hide prg-to-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Volutpat ac tincidunt vitae semper quis
+                lectus. Ipsum suspendisse ultrices gravida dictum fusce.
+                Donec ac odio tempor orci dapibus ultrices. Tristique
+                magna sit amet purus. A cras semper auctor neque vitae.
+                Sit amet nisl purus in mollis nunc sed id. Quisque non
+                tellus orci ac auctor augue mauris augue. Vitae proin
+                sagittis nisl rhoncus mattis rhoncus. Adipiscing at in
+                tellus integer feugiat scelerisque.</p>
+            </div>
+          </li>
+
+          <!--Button 3-->
+          <li class="about-us-list-item col-lg-5">
+            <div class="displayLi">
+              <span class="number">03</span>
+              <div class="about-content">
+                <h2>Case studies</h2>
+                <p class="show">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Unum est sine dolore esse.</p>
+              </div>
+            <span class="more-about">+</span>
+          </div>
+          <div class="hideLi">
+            <p class="hide prg-to-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+              sed do eiusmod tempor incididunt ut labore et dolore
+              magna aliqua. Volutpat ac tincidunt vitae semper quis
+              lectus. Ipsum suspendisse ultrices gravida dictum fusce.
+              Donec ac odio tempor orci dapibus ultrices. Tristique
+              magna sit amet purus. A cras semper auctor neque vitae.
+              Sit amet nisl purus in mollis nunc sed id. Quisque non
+              tellus orci ac auctor augue mauris augue. Vitae proin
+              sagittis nisl rhoncus mattis rhoncus. Adipiscing at in
+              tellus integer feugiat scelerisque.</p>
+          </div>
+          </li>
+
+          <!--Button 4-->
+          <li class="about-us-list-item col-lg-5">
+            <div class="displayLi">
+              <span class="number">04</span>
+              <div class="about-content">
+                <h2>Get a quote</h2>
+                <p class="show">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                  Unum est sine dolore esse. </p>
+              </div>
+              <span class="more-about">+</span>
+            </div>
+            <div class="hideLi">
+              <p class="hide prg-to-show">Lorem ipsum dolor sit amet, consectetur adipiscing elit,
+                sed do eiusmod tempor incididunt ut labore et dolore
+                magna aliqua. Volutpat ac tincidunt vitae semper quis
+                lectus. Ipsum suspendisse ultrices gravida dictum fusce.
+                Donec ac odio tempor orci dapibus ultrices. Tristique
+                magna sit amet purus. A cras semper auctor neque vitae.
+                Sit amet nisl purus in mollis nunc sed id. Quisque non
+                tellus orci ac auctor augue mauris augue. Vitae proin
+                sagittis nisl rhoncus mattis rhoncus. Adipiscing at in
+                tellus integer feugiat scelerisque.</p>
+            </div>
+          </li>
+        </ol>
+    </section>
+
+    <!--Small buttons section-->
+    <section class="more" >
+      <ul class="more-list row justify-content-around" id="template">
+
+        <!--Button 1-->
+        <li class="more-list-item col-5 col-lg-2">
+          <div class="row">
+            <h3 class="col-10">Work about</h3>
+            <span class="col-2 text-more">&plus;</span>
+          </div>
+          <p class="hide more-to-show">Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Unum est sine dolore esse, alterum cum
+            voluptate. Itaque fecimus. Sedulo, inquam, faciam.
+            Comprehensum, quod cognitum non habet?</p>
+            <p class="hide see-more"><i class="fa fa-angle-right"></i></p>
+        </li>
+
+        <!--Button 2-->
+        <li class="more-list-item col-5 col-lg-2">
+          <div class="row">
+            <h3 class="col-10">Test text with</h3>
+            <span class="col-2 text-more">&plus;</span>
+          </div>
+          <p class="hide more-to-show">Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Unum est sine dolore esse, alterum cum
+            voluptate. Itaque fecimus. Sedulo, inquam, faciam.
+            Comprehensum, quod cognitum non habet?</p>
+            <p class="hide see-more"><i class="fa fa-angle-right"></i></p>
+        </li>
+
+        <!--Button 3-->
+        <li class="more-list-item col-5 col-lg-2">
+          <div class="row">
+            <h3 class="col-10">Just a simple</h3>
+            <span class="col-2 text-more">&plus;</span>
+          </div>
+          <p class="hide more-to-show">Lorem ipsum dolor sit amet, consectetur adipiscing
+            elit. Unum est sine dolore esse, alterum cum
+            voluptate. Itaque fecimus. Sedulo, inquam, faciam.
+            Comprehensum, quod cognitum non habet?</p>
+            <p class="hide see-more"><i class="fa fa-angle-right"></i></p>
+        </li>
+
+        <!--Button 4-->
+        <li class="more-list-item col-5 col-lg-2">
+          <div class="row">
+            <h3 class="col-10">Nothing has</h3>
+            <span class="col-2 text-more">&plus;</span>
+          </div>
+          <p class="hide more-to-show">Lorem ipsum dolor sit amet, consectetur adipiscing
+            lit. Unum est sine dolore esse, alterum cum voluptate.
+             Itaque fecimus. Sedulo, inquam, faciam. Comprehensum,
+              quod cognitum non habet?</p>
+          <p class="hide see-more"><i class="fa fa-angle-right"></i></p>
+        </li>
+      </ul>
+
+      <!--Space for new small buttons, when View more is clicked-->
+      <p id="new-more"></p>
+
+      <!--View more button, for new small buttons to appear, when clicked-->
+      <p class="view-more" id="js-view-more">  View more  </p>
+    </section>
+
+    <!--News section-->
+    <article class="news">
+      <!--Blue corner that is shown only on big devices-->
+      <div class="desktop-blue-corner"></div>
+      <h2><span class="news-title">Article about one client...</span></h2>
+      <div class="nav-btn">
+          <span><i class="fa fa-angle-left"></i></span>
+          <span><i class="fa fa-angle-right"></i></span>
+      </div>
+      <div class="news-body">
+        <!--Blue corner that is shown on small devices(under 1024px)-->
+        <div class="blue-corner"></div>
+        <p>Lorem ipsum dolor sit amet, consectetur
+          adipiscing elit. Haec qui audierit, ut ridere non curet,
+          discedet tamen nihilo firmior ad dolorem ferendum, quam
+          venerat. An est aliquid per se ipsum flagitiosum, etiamsi
+          nulla comitetur infamia? Cupiditates non Epicuri divisione
+          finiebat, sed sua satietate. Duo Reges: constructio interrete.
+          Quarum ambarum rerum cum medicinam pollicetur, luxuriae
+          licentiam pollicetur. </p>
+        <img class="img-fluid" src="photos/the_office.jpg">
+      </div>
+      <div class="desktop-colored-corner">
+        <p class="read-more">READ ARTICLE</p>
+      </div>
+    </article>
+
+  </body>
+</html>

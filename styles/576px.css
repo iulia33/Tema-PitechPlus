@@ -1,0 +1,13 @@
+.login-modal{
+  background-color: transparent;
+  z-index: 0;
+}
+
+.login-content{
+  max-width: 30%;
+}
+
+.animate{
+  -webkit-animation:none;
+  animation: none;
+}
