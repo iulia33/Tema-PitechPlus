@@ -18,9 +18,7 @@ $(document).ready(function(){
 
   //close login form
   var closeLogin = document.getElementById('close-div');
-  closeLogin.onclick= closeLogin;
-
-  function closeLogin(){
+  closeLogin.onclick= function(){
       loginForm.style.display='none';
   }
 
