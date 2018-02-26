@@ -446,7 +446,7 @@
 
   .news-body img{
     align-self: center;
-    max-width: 40%;
+    width: 40%;
     height: auto;
     padding:1rem 1rem 0 0.5rem;
   }
@@ -515,13 +515,15 @@
     font-size: 1rem;
     max-width: 80%;
     height: auto;
-    display: table;
+    display: flex;
+    flex-flow:column;
 
   }
 /*Header, headline and banner reordering and stylying*/
   h1{
     font-size: 2.3em;
     margin-top: 2rem;
+    order:3;
   }
 
   .authorization{
@@ -530,6 +532,7 @@
     right: 11%;
     background-color: rgba(255,255,255,0.4);
     z-index: 1;
+    order:2;
   }
   .login-modal{
     background-color: transparent;
@@ -556,7 +559,7 @@
   }
 
   #banner{
-    display: table-header-group;
+    order:1;
   }
   .control-next{
     width: 10%;
@@ -579,6 +582,10 @@
     padding: 0.5rem 1rem;
   }
 /*Restyling for about us section - big buttons*/
+  .about-us{
+    order:4;
+  }
+
   .about-us-list-item{
     max-width: 48%;
     flex:0 0 50%;
@@ -597,6 +604,10 @@
   }
 
 /*Restyling for more section - small buttons*/
+  .more{
+    order:5;
+}
+
   .more-list-item h3{
     font-size: 1.6rem;
   }
@@ -612,6 +623,7 @@
 /*Restyling for news about clients section*/
 .news{
   background-color: #fff;
+  order:6;
   position: relative;
 }
 
